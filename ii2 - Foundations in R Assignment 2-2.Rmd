@@ -12,13 +12,13 @@ For your second R Assignment, complete the questions below. Remember, weekly ass
 ```{r}
 library(tidyverse)
 ```
-no AI used
+no AI used.
 
 2. Load the billboard data. 
 ```{r}
 data(billboard)
 ```
-no AI used
+no AI used.
 
 3. Describe the dataset.
 It's a list of tracks made by different artists and their ranking each week

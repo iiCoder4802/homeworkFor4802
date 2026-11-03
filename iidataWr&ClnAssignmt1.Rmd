@@ -17,6 +17,8 @@ data(sleep)
 2. Is it long or wide format? How do you know? 
 long format. each particpant is listed more than once. In this case when they are in diff groups.
 Describing the code from left to right: make a new
+aw comment: i'm not sure i'm following line 19
+
 3. Transform this data so that it is in the other format. 
 ```{r}
 sleep <- tidyr::pivot_wider(
@@ -116,3 +118,5 @@ billboard <- billboard |>
   )
 ```
 L2RE: for the billboard data set separate the column date.entered into three columns: year, month, and day. The current values are separated by "-" and btw these are numbers
+
+what does convert = true do? 

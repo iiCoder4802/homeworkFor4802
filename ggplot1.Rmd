@@ -11,6 +11,7 @@ library(tidyverse)
 ```{r}
 starwars
 ```
+should use data() function when loading data
 
 
 2. create a graph showing the frequency of eye colors in the dataset. 
@@ -76,6 +77,9 @@ ggplot(starwars, aes(x = eye_color, fill = eye_color)) +
   theme(legend.position = "none")
 ```
 L2RCE: In the Star Wars data set, we're gonna make a change to data set in the eye color column. I want you to deploy the following re-codes: put anything that says green, yellow or red, blue, or unknown, into other and any character that has blue – gray, just change it to blue. Then I want you to use GG plot for the Star Wars dataset with the eye color variable and I want you to change the fill. and make a bar graph btw. For each bar Set them all black by default. Now set the black bar to black, the blue bar to blue, etc. On the x-axis, have eye color and on the Y axis have frequencies written. No need to have a legend. Then, basically doing the same thing over, except including some of the missed colors. Also, some of the code in the third “paragraph” is redundant because I deleted some of the colors. when I mutated the actual data permanently for organizational purposes and visual cleanness.
+
+why did you choose to recode some colors as other? 
+
 4. Create a graph displaying information about character's height in each homeworld. 
 ```{r}
 ggplot(starwars, aes(x = height, y = homeworld)) +
@@ -113,6 +117,8 @@ ggplot(
 ```
 L2RCE: use GGPLOT to make a graph with a subset of the Star Wars data set where only entries with the Homeworld value set as [one of the popular seven]. on the X axis we're looking at height and the Y we are looking at the Homeworld they are from. Make this a box plot with green filled boxes and have it jitter with 0.5 transparency and label the X axis with height in centimeters and the Y axis with Homeworld.' I figured this is a much better way to do it it because if you want to see the height of the one character and all the other worlds, you can just go ahead and check that. But if you wanna see A general idea of what's going on in each home world of Height data, that's what you make a box plot for, so I only included the ones that show those trends (aka multiple points)
 
+why did you decide to remove data? 
+
 6. Create a graph of character's height by mass. 
 ```{r}
 ggplot(starwars, aes(x = mass, y = height)) +
@@ -143,6 +149,8 @@ ggplot(subset(starwars, mass<=250), aes(x = mass, y = height, color = gender)) +
   labs(x = "Mass (kg)", y = "Height (cm)")
 ```
 In addition to the instructions for number seven, have color represent gender with values masculine being blue and feminine being red and everything else just green. call it gender in the legend.
+
+why get rid of the data point? 
 
 9. Customize your graph to make it more presentable. Consider color, backgrounds, axes, etc.
 ```{r}
